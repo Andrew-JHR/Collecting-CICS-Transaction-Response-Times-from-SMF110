@@ -1,0 +1,11 @@
+      DFHMCT   TYPE=INITIAL,SUFFIX=C2,STARTER=YES,       
+*                   
+      DFHMCT   TYPE=RECORD,                                            *
+               CLASS=PERFORM,                                          *
+               EXCLUDE=(DFHFEPI,DFHFILE,DFHSTOR,DFHPROG,DFHSYNC,DFHTERM* 
+               ,DFHTEMP,DFHMAPP,DFHJOUR,DFHDATA,DFHDEST),              *
+               INCLUDE=(DFHTASK)           
+*
+      DFHMCT   TYPE=FINAL
+      END         
+         
